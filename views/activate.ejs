@@ -1,0 +1,41 @@
+<div class="container">
+<div id="accordion">
+	<div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <span class="badge badge-dark">Click Here</span> <span class="badge badge-dark">></span>
+          to see your activation token. &nbsp; Copy the token below and and paste in the box to activate your account.
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+      	<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button><p >  <%= token %>  </p></div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  <br><br>
+
+
+	  <form  action="/users/activate" method="POST" class="form">
+	  	
+	  	<input class="form-control" type="text" name="token" placeholder="Paste token here!">
+	  	<br>
+		<button class="btn btn-success" type="submit">Activate</button>
+
+	</form>
+<br><br><br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	
+</div>
+
